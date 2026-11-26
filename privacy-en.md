@@ -4,7 +4,7 @@ title: Komirka — Privacy policy
 
 # Komirka — Privacy policy
 
-*Effective: 25 November 2026 · Applies to the Komirka Chrome extension, version 1.0.0 and later.*
+*Effective: 26 November 2026 · Applies to the Komirka Chrome extension, version 1.0.0 and later.*
 *[Українською](privacy-uk.md)*
 
 Komirka replaces Chrome's New Tab page with a shortcut grid and can archive your open tabs into
@@ -18,7 +18,7 @@ All of this is stored only by Chrome itself, on your device or in your own Chrom
 | What | Where | Why |
 |---|---|---|
 | Your shortcuts (address, title, position), grid size, background, archive retention and display settings | `chrome.storage.sync` — your Chrome profile; Chrome syncs it to your other devices if Chrome sync is on | To show the same New Tab on all your devices |
-| Your Pro licence key and the result of its last check | `chrome.storage.sync` | So Pro works on all your devices without entering the key again |
+| The time Komirka first ran on your account | `chrome.storage.sync` | Early access: installs from before its end keep Pro 3 more months |
 | Archive settings of this device (on/off, schedule, device name), the archive folder id, scheduler state, photo rotation state | `chrome.storage.local` — this device only | To run the archive and the background on this device |
 | Up to 3 background photos | IndexedDB of the extension — this device only | So the New Tab never shows a blank background |
 | Archived tabs (page title and address) | Your Chrome bookmarks, in the archive folder the extension creates | This is the tab archive; you can see and delete these bookmarks in Chrome at any time |
@@ -35,22 +35,20 @@ only, so you can add it to your New Tab.
 
 ## What leaves your browser
 
-Only two kinds of requests, and only in these cases:
+Only one kind of request, and only in these cases:
 
-1. **Background photos — Wikimedia Commons** (`commons.wikimedia.org`, images from `upload.wikimedia.org` / `thumb.wikimedia.org`).
-   Only while a photo background is selected, or when you click a photo preview in the settings. The
-   request asks for a random featured picture of the chosen topic. It contains no personal data; it
-   carries the extension name, its version and the address of this site, as Wikimedia asks of all apps.
-   Wikimedia's privacy policy: <https://foundation.wikimedia.org/wiki/Policy:Privacy_policy>.
-2. **Pro licence check — Polar** (`api.polar.sh`). Only if you entered a Pro licence key: when you enter
-   it, and then about every 6 hours. The request contains only the key and Komirka's seller id at Polar.
-   Polar answers whether the key is valid. Polar's privacy policy: <https://polar.sh/legal/privacy>.
+**Background photos — Wikimedia Commons** (`commons.wikimedia.org`, images from `upload.wikimedia.org` / `thumb.wikimedia.org`).
+Only while a photo background is selected, or when you click a photo preview in the settings. The
+request asks for a random featured picture of the chosen topic. It contains no personal data; it
+carries the extension name, its version and the address of this site, as Wikimedia asks of all apps.
+Wikimedia's privacy policy: <https://foundation.wikimedia.org/wiki/Policy:Privacy_policy>.
 
-Buying Pro happens on Polar's checkout page, not inside the extension. Polar is the merchant of record:
-your e-mail address and payment details are given to Polar (and its payment processor), not to the
-extension. The developer sees your purchase in Polar's dashboard as any seller would.
+**Early access: no purchases, no licence checks.** Komirka is in early access: all features are included,
+there is nothing to buy inside the extension, and it makes no licence checks and no requests to any payment
+service. Before paid Pro launches, this policy will be updated to say which payment service is used and what
+it receives; that version will be announced at least 2 weeks ahead.
 
-Your Chrome sync data (shortcuts, settings, the licence key, bookmarks) is handled by Google under
+Your Chrome sync data (shortcuts, settings, bookmarks) is handled by Google under
 Google's privacy policy; Komirka does not run its own sync.
 
 ## What Komirka does not do
@@ -66,8 +64,7 @@ Google's privacy policy; Komirka does not run its own sync.
 - Removing the extension deletes what it stored on that device (`chrome.storage` and IndexedDB). The
   archive bookmarks stay in your bookmarks until you delete them, so nothing you archived is lost.
 - Synced data can be erased in your Google account: Chrome → Settings → You and Google → Sync →
-  "Review your synced data" (or delete your shortcuts and the key in Komirka before removing it).
-- To stop licence checks, remove the key in Settings → Pro.
+  "Review your synced data" (or delete your shortcuts in Komirka before removing it).
 
 ## Changes and contact
 

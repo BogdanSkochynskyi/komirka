@@ -15,14 +15,12 @@ tabs into bookmarks on a schedule.
 ## Support · Підтримка
 
 Found a bug or have a question? Open an issue: <https://github.com/BogdanSkochynskyi/komirka/issues>
-(please do not post your Pro licence key).
 
 Знайшли помилку чи маєте запитання? Створіть issue: <https://github.com/BogdanSkochynskyi/komirka/issues>
-(не публікуйте свій ключ Pro).
 
-**Pro purchases, receipts, cancelling a subscription · Покупки Pro, чеки, скасування підписки:**
-the Polar customer portal (link in Komirka → Settings → Pro) · портал покупця Polar (посилання в
-Комірка → Налаштування → Pro).
+**Early access · Ранній доступ:** all features, including Pro, are included for now; there is nothing to buy.
+Paid Pro will be announced at least 2 weeks ahead. · Зараз доступні всі можливості, зокрема Pro, і нічого не
+треба купувати. Про платний Pro буде оголошено щонайменше за 2 тижні.
 
 ## Privacy · Конфіденційність
 
